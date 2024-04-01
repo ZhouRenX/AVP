@@ -116,11 +116,12 @@ namespace PolySpatial.Samples
 
         void Update()
         {
+            Debug.Log(1);
             if (!CheckHandSubsystem())
                 return;
 
             var updateSuccessFlags = m_HandSubsystem.TryUpdateHands(XRHandSubsystem.UpdateType.Dynamic);
-
+            Debug.Log(2);
             if ((updateSuccessFlags & XRHandSubsystem.UpdateSuccessFlags.RightHandRootPose) != 0)
             {
                 m_HandJointsUpdatedEventArgs.hand = m_HandSubsystem.rightHand;
@@ -147,6 +148,7 @@ namespace PolySpatial.Samples
 
         void TryCheck()
         {
+            Debug.Log("TryCheck");
             if (Time.timeSinceLevelLoad > m_TimeOfLastConditionCheck + m_GestureDetectionInterval)
             {
                 m_TimeOfLastConditionCheck = Time.timeSinceLevelLoad;

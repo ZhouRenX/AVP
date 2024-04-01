@@ -77,6 +77,7 @@
     <Compile Include="Assets\Samples\PolySpatial\MixedReality\Scripts\PinchSpawn.cs" />
     <Compile Include="Assets\Samples\PolySpatial\SpatialUI\Scripts\SpatialUISlider.cs" />
     <Compile Include="Assets\Samples\PolySpatial\BalloonGallery\Scripts\BalloonMovement.cs" />
+    <Compile Include="Assets\Samples\PolySpatial\Shared\Scripts\OpenLogButton.cs" />
     <Compile Include="Assets\Samples\PolySpatial\SpatialUI\Scripts\SpatialUIToggle.cs" />
     <Compile Include="Assets\Samples\PolySpatial\Shared\Scripts\HubInputManager.cs" />
     <Compile Include="Assets\Samples\PolySpatial\SpatialUI\Scripts\SpatialUIButton.cs" />

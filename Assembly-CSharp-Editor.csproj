@@ -69,6 +69,7 @@
     <Compile Include="Assets\Tutorial\Editor\EditorUI\Criterion\HasOpenedWindowCriterion.cs" />
     <Compile Include="Assets\Tutorial\Editor\SharedWorlds\Criterion\VolCamDimensionCriterion.cs" />
     <Compile Include="Assets\Tutorial\Editor\SharedWorlds\Criterion\ParticleSystemCriterion.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
     <Compile Include="Assets\Tutorial\Editor\Main\TutorialCallbacks.cs" />
     <Compile Include="Assets\Tutorial\Editor\SharedWorlds\Criterion\VolCamModeCriterion.cs" />
     <Compile Include="Assets\Tutorial\Editor\SharedWorlds\Criterion\AddParticleSystemCriterion.cs" />
@@ -1287,6 +1288,7 @@
     <ProjectReference Include="Assembly-CSharp.csproj" />
     <ProjectReference Include="Unity.XR.Hands.Samples.Gestures.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj" />
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
     <ProjectReference Include="LevelHub.Editor.csproj" />
     <ProjectReference Include="PolySpatial.Samples.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />

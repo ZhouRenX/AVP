@@ -68,6 +68,7 @@
     <Compile Include="Assets\ExampleAssets\Scripts\SpatialUIInputManager.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\SpatialUIToggle.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Bounded\BoundedInputManager.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\SpatialUIDropDown.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\CollisionBehaviour.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ARFeatheredPlaneMeshVisualizer.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Kawaii Slimes\Cameras\Scripts\FreeLookCam.cs" />
     <Compile Include="Assets\Kawaii Slimes\Cameras\Scripts\PivotBasedCameraRig.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ARContactSpawnTrigger.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\UnboundedInputManager.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\DistanceDestroyParent.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\SpawnedObjectsManager.cs" />
@@ -93,10 +95,14 @@
     <Compile Include="Assets\ExampleAssets\Scripts\Bounded\BoundedObjectBehavior.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\XRBlaster.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\TestReporter.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ARPlaneInteractable.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ObjectSpawner.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\GoalManager.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Bounded\ObjectVolumeLimiter.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Reporter.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Rotator.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\SpatialUI.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\TrackedHandManager.cs" />
@@ -107,6 +113,7 @@
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\StreamingAssets\build_info.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -1277,6 +1284,7 @@
   <ItemGroup>
     <ProjectReference Include="Unity.XR.Hands.Samples.Gestures.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj" />
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
     <ProjectReference Include="LevelHub.Editor.csproj" />
     <ProjectReference Include="PolySpatial.Samples.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
