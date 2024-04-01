@@ -2,3 +2,13 @@
 .vscode
 Library
 Logs
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+AVP.sln
+Assembly-CSharp.csproj
+*.csproj
+UserSettings/PolySpatialUserSettings.asset
+Temp
+ProjectSettings/ShaderGraphSettings.asset
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json
