@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e639827a9988b842a70fa5835541872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ConnectToPlayToDevice: 1
+  m_ConnectToPlayToDevice: 0
   m_ConnectionTimeout: 2
   m_ConnectionCandidates:
     m_Connections:
