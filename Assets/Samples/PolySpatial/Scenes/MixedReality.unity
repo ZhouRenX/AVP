@@ -958,30 +958,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handTips:
-  - m_HandShape: {fileID: 0}
-    m_HandPose: {fileID: 11400000, guid: 7fdd2afa44a436446bdb55fa7872a77d, type: 2}
+  - handTrackingEvents: {fileID: 1031829885}
+    m_HandShape: {fileID: 11400000, guid: ebe9355f9ed9c47ca8adc4e023927ab8, type: 2}
+    m_HandPose: {fileID: 0}
     m_MinimumHoldTime: 0.2
-    tip: Thumbs Up
+    tip: Custom Come Start R
     m_GesturePerformed:
       m_PersistentCalls:
         m_Calls: []
     m_GestureEnded:
       m_PersistentCalls:
         m_Calls: []
-  - m_HandShape: {fileID: 11400000, guid: ebe9355f9ed9c47ca8adc4e023927ab8, type: 2}
+  - handTrackingEvents: {fileID: 1031829885}
+    m_HandShape: {fileID: 11400000, guid: add2f42f29ac549d292d51e4c44a912e, type: 2}
     m_HandPose: {fileID: 0}
     m_MinimumHoldTime: 0.2
-    tip: Come Start
+    tip: Custom Come End R
     m_GesturePerformed:
       m_PersistentCalls:
         m_Calls: []
     m_GestureEnded:
       m_PersistentCalls:
         m_Calls: []
-  - m_HandShape: {fileID: 11400000, guid: add2f42f29ac549d292d51e4c44a912e, type: 2}
+  - handTrackingEvents: {fileID: 1031829885}
+    m_HandShape: {fileID: 11400000, guid: e863a2a22d6dda740bd9ee2298b3afd5, type: 2}
     m_HandPose: {fileID: 0}
     m_MinimumHoldTime: 0.2
-    tip: Come End
+    tip: Thumb Up R
+    m_GesturePerformed:
+      m_PersistentCalls:
+        m_Calls: []
+    m_GestureEnded:
+      m_PersistentCalls:
+        m_Calls: []
+  - handTrackingEvents: {fileID: 1031829885}
+    m_HandShape: {fileID: 11400000, guid: f8cb17f8ab5fc8c4083750c7e3a19f97, type: 2}
+    m_HandPose: {fileID: 0}
+    m_MinimumHoldTime: 0.2
+    tip: Open R
     m_GesturePerformed:
       m_PersistentCalls:
         m_Calls: []
@@ -1025,6 +1039,67 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2539568994864427768, guid: 4c18110ab56084913ba4d239d37da019, type: 3}
   m_PrefabInstance: {fileID: 1182164364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1031829884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031829886}
+  - component: {fileID: 1031829885}
+  m_Layer: 0
+  m_Name: XRHandTrackEvent_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1031829885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031829884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b9cf54c47f40ee9c3eb30ea8eb89b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Handedness: 2
+  m_UpdateType: 1
+  m_PoseUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JointsUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingAcquired:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingLost:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1031829886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031829884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.17282814, y: 2.4463556, z: -3.0671093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1174253161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1508,6 +1583,67 @@ MonoBehaviour:
   m_MinAngleAllowed: 0.1
   m_MaxAngleAllowed: 5
   m_TimeUntilThresholdReachesMaxAngle: 3
+--- !u!1 &2002315489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002315491}
+  - component: {fileID: 2002315490}
+  m_Layer: 0
+  m_Name: XRHandTrackEvent_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2002315490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002315489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b9cf54c47f40ee9c3eb30ea8eb89b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Handedness: 1
+  m_UpdateType: 1
+  m_PoseUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JointsUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingAcquired:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingLost:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TrackingChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &2002315491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002315489}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.17282814, y: 2.4463556, z: -3.0671093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026256746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,3 +2405,5 @@ SceneRoots:
   - {fileID: 1982171368}
   - {fileID: 544090651}
   - {fileID: 1182164364}
+  - {fileID: 1031829886}
+  - {fileID: 2002315491}
