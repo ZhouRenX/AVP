@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
 using UnityEngine.Events;
 
 #if UNITY_INCLUDE_XR_HANDS
@@ -13,6 +14,8 @@ namespace PolySpatial.Samples
     [Serializable]
     public class HandTip
     {
+        public XRHandTrackingEvents handTrackingEvents;
+
         public XRHandShape m_HandShape;
         public XRHandPose m_HandPose;
 
@@ -31,12 +34,14 @@ namespace PolySpatial.Samples
 
         public void Init(UnityAction action)
         {
+            handTrackingEvents.jointsUpdated.AddListener(CheckHand);
             m_GesturePerformed.AddListener(action);
         }
 
 
         public void CheckHand(XRHandJointsUpdatedEventArgs eventArgs)
         {
+            Debug.Log("CheckHand");
             var detected =
                 m_HandShape != null && m_HandShape.CheckConditions(eventArgs) ||
                 m_HandPose != null && m_HandPose.CheckConditions(eventArgs);
@@ -98,7 +103,7 @@ namespace PolySpatial.Samples
         float m_ScaledThreshold;
 
         const float k_PinchThreshold = 0.02f;
-
+        static readonly List<XRHandSubsystem> k_SubsystemsReuse = new List<XRHandSubsystem>();
         XRHandJointsUpdatedEventArgs m_HandJointsUpdatedEventArgs = new XRHandJointsUpdatedEventArgs();
 
         void Start()
@@ -161,6 +166,8 @@ namespace PolySpatial.Samples
 
         void GetHandSubsystem()
         {
+
+            /*
             var xrGeneralSettings = XRGeneralSettings.Instance;
             if (xrGeneralSettings == null)
             {
@@ -180,6 +187,7 @@ namespace PolySpatial.Samples
                     m_HandSubsystem.Start();
                 }
             }
+            */
         }
 
         bool CheckHandSubsystem()

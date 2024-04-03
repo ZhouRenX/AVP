@@ -9,7 +9,7 @@ using UnityEngine.XR.VisionOS;
 
 namespace PolySpatial.Samples
 {
-    public class HandVisualizer : MonoBehaviour
+    public class AVPHandVisualizer : MonoBehaviour
     {
         [SerializeField]
         GameObject m_JointPrefab;
