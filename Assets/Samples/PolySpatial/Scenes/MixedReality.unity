@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18018535, g: 0.22559482, b: 0.30677685, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1247,6 +1247,22 @@ MonoBehaviour:
   m_PrimaryTouch: {fileID: -7956929315595962687, guid: 660d0bc49ad5feb4e83f78a97d15b9fc, type: 3}
   m_CameraTransform: {fileID: 2121586914}
   m_HeadPoseReticle: {fileID: 290534402812620168, guid: ac01d01054a614e4b81a0174f9e3810e, type: 3}
+  onPinch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 727977850}
+        m_TargetAssemblyTypeName: FindPath, PolySpatial.Samples
+        m_MethodName: GetPathToPinchPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  curPlane: {fileID: 0}
 --- !u!114 &727977847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,7 +1366,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraTransform: {fileID: 2121586914}
   m_PathPoint: {fileID: 2398874214542288307, guid: b381871d4986bf447852d0caf42b035d, type: 3}
-  rotateSpeed: 15
+  m_PinchTargetTransform: {fileID: 721231591}
+  m_PetTransform: {fileID: 1433088432}
+  raycastMoveSpeed: 30
 --- !u!1 &813087655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,7 +2114,7 @@ Transform:
   m_GameObject: {fileID: 1433088428}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.195, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2627,7 +2645,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 727977850}
         m_TargetAssemblyTypeName: FindPath, PolySpatial.Samples
-        m_MethodName: GetPath
+        m_MethodName: GetPathToCamera
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

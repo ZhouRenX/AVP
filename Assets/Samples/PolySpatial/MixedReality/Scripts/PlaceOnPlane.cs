@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -26,6 +27,9 @@ public class PlaceOnPlane : MonoBehaviour
 
     [SerializeField]
     GameObject m_HeadPoseReticle;
+
+    [SerializeField]
+    public UnityEvent onPinch;
 
 #if UNITY_INCLUDE_ARFOUNDATION
     GameObject m_SpawnedHeadPoseReticle;
@@ -80,7 +84,12 @@ public class PlaceOnPlane : MonoBehaviour
                 {
                     if (m_HitInfo.transform.TryGetComponent(out ARPlane plane))
                     {
-                        m_TargetTransform.position = m_HitInfo.point;
+                        if (MathF.Abs(m_HitInfo.normal.y - 1f) < 0.1f)
+                        {
+                            m_TargetTransform.position = m_HitInfo.point;
+                            onPinch.Invoke();
+                        }
+
                     }
                 }
 
