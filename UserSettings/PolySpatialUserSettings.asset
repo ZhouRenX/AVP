@@ -18,8 +18,17 @@ MonoBehaviour:
     m_Connections:
     - m_IP: 192.168.0.106
       m_ServerPort: 9876
+    - m_IP: 192.168.0.107
+      m_ServerPort: 9876
     m_ConnectionsInfo:
     - IP: 192.168.0.106
+      Name: VP
+      ServerPort: 9876
+      Status: 0
+      PlayToDeviceHostVersion: 
+      PlayToDeviceHostMagicCookie: 0
+      IsSelected: 0
+    - IP: 192.168.0.107
       Name: VP
       ServerPort: 9876
       Status: 0
