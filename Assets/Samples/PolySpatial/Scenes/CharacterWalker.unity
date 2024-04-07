@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18018535, g: 0.22559482, b: 0.30677685, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2650,7 +2650,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8883965876045361749, guid: cef99035c800c4eceb2ea0971f087e83, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: cef99035c800c4eceb2ea0971f087e83, type: 3}
 --- !u!1001 &1200650839
 PrefabInstance:
@@ -2884,11 +2887,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &1255340215 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 12fe5c8a669f95447a38be1bbda5353d, type: 3}
-  m_PrefabInstance: {fileID: 1255340210}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1263232131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4367,7 +4365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_VolumeCameraTransfrom: {fileID: 28444773}
-  m_CharacterTransform: {fileID: 1255340215}
+  m_CharacterTransform: {fileID: 2045204786968312685}
   m_CameraDistanceThreshold: 0.3
   m_CameraMovementSpeed: 0.175
 --- !u!1001 &2058422091
