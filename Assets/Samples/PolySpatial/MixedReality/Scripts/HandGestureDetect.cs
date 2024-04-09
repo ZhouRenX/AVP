@@ -25,12 +25,12 @@ public class DynamicHandAction
     public float minimumStartHoldTime = 0.2f;
     public float maxDetectionTime = 0.5f;
 
-    public UnityEvent startedEvent;
-    public UnityEvent startedStopEvent;
-    public UnityEvent endedEvent;
-    public UnityEvent endedStopEvent;
+    public UnityEvent<XRHandJointsUpdatedEventArgs> startedEvent;
+    public UnityEvent<XRHandJointsUpdatedEventArgs> startedStopEvent;
+    public UnityEvent<XRHandJointsUpdatedEventArgs> endedEvent;
+    public UnityEvent<XRHandJointsUpdatedEventArgs> endedStopEvent;
 
-    EHandActionState state = EHandActionState.normal;
+    public EHandActionState state = EHandActionState.normal;
     bool m_WasDetected;
 
     float m_HoldStartTime;
@@ -65,14 +65,14 @@ public class DynamicHandAction
                         if (holdTimer > minimumStartHoldTime)
                         {
                             m_WasDetected = false;
-                            startedEvent?.Invoke();
+                            startedEvent?.Invoke(eventArgs);
                             state = EHandActionState.start;
                             m_DetectionStartTime = Time.timeSinceLevelLoad;
                         }
                     }
                     else
                     {
-                        startedStopEvent?.Invoke();
+                        startedStopEvent?.Invoke(eventArgs);
                     }
                     break;
                 }
@@ -83,13 +83,14 @@ public class DynamicHandAction
                         detected = endHandShape != null && endHandShape.CheckConditions(eventArgs);
                         if (detected)
                         {
-                            endedEvent?.Invoke();
+                            endedEvent?.Invoke(eventArgs);
                             state = EHandActionState.normal;
                         }
                     }
                     else
                     {
-                        endedStopEvent?.Invoke();
+                        endedStopEvent?.Invoke(eventArgs);
+                        state = EHandActionState.normal;
                     }
                     break;
                 }
@@ -125,4 +126,6 @@ public class HandGestureDetect : MonoBehaviour
     {
 
     }
+
+    
 }

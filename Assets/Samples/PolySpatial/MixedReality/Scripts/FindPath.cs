@@ -59,7 +59,7 @@ public class FindPath : MonoBehaviour
             {
                 if (m_HitInfo.transform.TryGetComponent(out ARPlane plane))
                 {
-                    if (MathF.Abs(plane.normal.y - 1f) < 0.1f)
+                    if (Vector3.Angle(m_HitInfo.normal,Vector3.up) < 10f)
                     {
                         path.Add(m_HitInfo.point);
                         GameObject instance = Instantiate(m_PathPoint, m_HitInfo.point, Quaternion.FromToRotation(m_PathPoint.transform.up, m_HitInfo.normal));

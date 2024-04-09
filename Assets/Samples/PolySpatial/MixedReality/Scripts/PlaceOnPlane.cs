@@ -84,7 +84,7 @@ public class PlaceOnPlane : MonoBehaviour
                 {
                     if (m_HitInfo.transform.TryGetComponent(out ARPlane plane))
                     {
-                        if (MathF.Abs(m_HitInfo.normal.y - 1f) < 0.1f)
+                        if (Vector3.Angle(m_HitInfo.normal,Vector3.up) < 10f)
                         {
                             m_TargetTransform.position = m_HitInfo.point;
                             onPinch.Invoke();
