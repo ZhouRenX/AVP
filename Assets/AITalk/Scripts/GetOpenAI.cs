@@ -46,7 +46,7 @@ public class ReceiveData
 public class GetOpenAI : MonoBehaviour
 {
     [SerializeField]
-    private string m_OpenAI_Key = "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";
+    private string m_OpenAI_Key = "";
     [SerializeField]
     private string m_API_Url = "https://api.openai.com/v1/chat/completions";
     [SerializeField]
