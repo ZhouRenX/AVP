@@ -82,7 +82,8 @@ public class GetOpenAI : MonoBehaviour
 
         request.SetRequestHeader("Content-Type", "application/json");
         request.SetRequestHeader("Accept", "application/json");
-        request.SetRequestHeader("Authorization", string.Format("Bearer {0)", m_OpenAI_Key));
+        request.SetRequestHeader("Authorization", string.Format("Bearer {0}", m_OpenAI_Key));
+        gameObject.SendMessage("SetAIContent", "#Waiting For GPT Request#");
         yield return request.SendWebRequest();
 
         if (request.responseCode == 200)
@@ -97,5 +98,21 @@ public class GetOpenAI : MonoBehaviour
                 _callback(_receiveMsg);
             }
         }
+        else
+        {
+            Debug.LogError("Failed Code: " + request.responseCode);
+        }
+    }
+
+    public void AITalk(string message)
+    {
+        StartCoroutine(GetPostData(message, SetTTS));
+    }
+
+    public void SetTTS(string message)
+    {
+        GetComponent<TextToSpeech>().textToSpeak = message;
+        gameObject.SendMessage("SetAIContent", message);
+        gameObject.SendMessage("StartTextToSpeech");
     }
 }

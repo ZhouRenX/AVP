@@ -74,8 +74,8 @@
     <Compile Include="Assets\ExampleAssets\Scripts\SpatialUIDropDown.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\CollisionBehaviour.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ARFeatheredPlaneMeshVisualizer.cs" />
-    <Compile Include="Assets\ExampleAssets\Scripts\AnimateWindow.cs" />
     <Compile Include="Assets\chatGPTAIGirlFriendSample\OpenAISample\Script\ChatPrefab.cs" />
+    <Compile Include="Assets\ExampleAssets\Scripts\AnimateWindow.cs" />
     <Compile Include="Assets\Kawaii Slimes\Cameras\Scripts\FreeLookCam.cs" />
     <Compile Include="Assets\Kawaii Slimes\Cameras\Scripts\PivotBasedCameraRig.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\Unbounded\ARContactSpawnTrigger.cs" />
@@ -104,6 +104,7 @@
     <Compile Include="Assets\ExampleAssets\Scripts\FadePlaneMaterial.cs" />
     <Compile Include="Assets\AzureRecognize\Script\TextToSpeech.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\AITalk\Scripts\AITalkUIController.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\XRBlaster.cs" />
     <Compile Include="Assets\AzureRecognize\Script\WavUtility.cs" />
     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />

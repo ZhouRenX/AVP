@@ -80,10 +80,4 @@ public class TextToSpeech : MonoBehaviour
         }
 
     }
-
-    [System.Serializable]
-    private class AccessTokenResponse
-    {
-
-    }
 }

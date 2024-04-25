@@ -68,7 +68,7 @@ public class SpeechRecognizer : MonoBehaviour
         // Attach the audio data to the request
         request.uploadHandler = new UploadHandlerRaw(audioData);
         request.uploadHandler.contentType = "application/octet-stream";
-
+        gameObject.SendMessage("SetMyContent", "#Waiting For SpeechRecognizer Request#");
         // Send the request and wait for the response
         yield return request.SendWebRequest();
 
@@ -85,7 +85,10 @@ public class SpeechRecognizer : MonoBehaviour
         string recognizedText = result.DisplayText;
 
         // Display the recognized text in the console
+
         Debug.Log("Recognized text: " + recognizedText);
+        gameObject.SendMessage("AITalk", recognizedText);
+        gameObject.SendMessage("SetMyContent", "recognizedText");
     }
 }
 
