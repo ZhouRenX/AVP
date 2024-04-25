@@ -13,3 +13,11 @@ ProjectSettings/ShaderGraphSettings.asset
 ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
 ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json
 Assets/StreamingAssets
+UserSettings/Layouts/default-2022.dwlt
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+LevelHub.Editor.csproj
+PolySpatial.Samples.csproj
+Unity.XR.Hands.Samples.Gestures.csproj
+Unity.XR.Interaction.Toolkit.Samples.Hands.csproj
+Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj

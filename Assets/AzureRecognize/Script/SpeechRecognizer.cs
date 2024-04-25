@@ -88,7 +88,7 @@ public class SpeechRecognizer : MonoBehaviour
 
         Debug.Log("Recognized text: " + recognizedText);
         gameObject.SendMessage("AITalk", recognizedText);
-        gameObject.SendMessage("SetMyContent", "recognizedText");
+        gameObject.SendMessage("SetMyContent", recognizedText);
     }
 }
 
